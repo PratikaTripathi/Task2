@@ -57,31 +57,31 @@ func main() {
 			},
 		},
 	}
-	res1, err := idfyClient.ExtractAadhar("StringOfImageWithBase64", idfyR)
+	res1, err := idfyClient.ExtractAadhar("Aadhar", idfyR)
 	if err != nil {
 		log.Fatal(err)
 	} else {
 		fmt.Println(res1)
 	}
-	res2, err := idfyClient.ExtractPan("StringOfImageWithBase64", idfyR)
+	res2, err := idfyClient.ExtractPan("Pan", idfyR)
 	if err != nil {
 		log.Fatal(err)
 	} else {
 		fmt.Println(res2)
 	}
-	res3, err := idfyClient.ExtractDl("StringOfImageWithBase64", idfyR)
+	res3, err := idfyClient.ExtractDl("DrivingLicense", idfyR)
 	if err != nil {
 		log.Fatal(err)
 	} else {
 		fmt.Println(res3)
 	}
-	res4, err := idfyClient.ExtractVoter("StringOfImageWithBase64", idfyR)
+	res4, err := idfyClient.ExtractVoter("VoterId", idfyR)
 	if err != nil {
 		log.Fatal(err)
 	} else {
 		fmt.Println(res4)
 	}
-	res5, err := idfyClient.ExtractPassport("StringOfImageWithBase64", idfyR)
+	res5, err := idfyClient.ExtractPassport("Passport", idfyR)
 	if err != nil {
 		log.Fatal(err)
 	} else {
